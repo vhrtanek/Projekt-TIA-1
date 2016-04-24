@@ -1,0 +1,5 @@
+class AccountToBankDatum < ActiveRecord::Migration
+  def change
+	add_reference :bank_datum, :account, index: true, foreign_key: true
+  end
+end

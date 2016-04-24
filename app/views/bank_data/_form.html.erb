@@ -1,0 +1,26 @@
+<%= form_for(@bank_datum) do |f| %>
+  <% if @bank_datum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bank_datum.errors.count, "error") %> prohibited this bank_datum from being saved:</h2>
+
+      <ul>
+      <% @bank_datum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+	<form>
+	  <div class="form-group">				
+		<label for="XXX">Import Vypisu</label>
+		<input type="file" id="XXX">
+		<p class="help-block">Import vo formate .txt</p>
+	  </div>
+	  <button type="submit" class="btn btn-default">Submit</button>
+
+
+  <div class="actions">
+	<%= f.submit 'name', class: 'button' %>
+  </div>
+<% end %>

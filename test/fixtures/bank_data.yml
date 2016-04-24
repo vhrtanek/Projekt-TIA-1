@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  accounted_at: 2016-04-21 22:28:12
+  currency: MyString
+  balance: 1.5
+  variable_symbol: MyString
+  amount: 1.5
+  specific_symbol: MyString
+  constant_symbol: MyString
+  transaction_type: MyString
+  account_of_counterParty: MyString
+  name_of_counterParty: MyString
+  bank_of_counterParty: MyString
+  information_for_recipient: MyString
+  information: MyString
+
+two:
+  accounted_at: 2016-04-21 22:28:12
+  currency: MyString
+  balance: 1.5
+  variable_symbol: MyString
+  amount: 1.5
+  specific_symbol: MyString
+  constant_symbol: MyString
+  transaction_type: MyString
+  account_of_counterParty: MyString
+  name_of_counterParty: MyString
+  bank_of_counterParty: MyString
+  information_for_recipient: MyString
+  information: MyString

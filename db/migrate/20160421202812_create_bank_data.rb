@@ -1,0 +1,21 @@
+class CreateBankData < ActiveRecord::Migration
+  def change
+    create_table :bank_data do |t|
+      t.datetime :accounted_at
+      t.string :currency
+      t.float :balance
+      t.string :variable_symbol
+      t.float :amount
+      t.string :specific_symbol
+      t.string :constant_symbol
+      t.string :transaction_type
+      t.string :account_of_counterParty
+      t.string :name_of_counterParty
+      t.string :bank_of_counterParty
+      t.string :information_for_recipient
+      t.string :information
+
+      t.timestamps null: false
+    end
+  end
+end

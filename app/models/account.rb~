@@ -1,0 +1,13 @@
+class Account < ActiveRecord::Base
+  
+  has_many :bank_datum
+  belongs_to :user
+  
+  self.table_name = 'accounts'
+
+def debug_print
+	print "\n\n\nxxx\n\n\n"
+end
+	
+
+end
